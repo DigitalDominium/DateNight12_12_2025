@@ -123,15 +123,15 @@
 
   <!-- 🎵 Background Music -->
   <audio id="bgMusic" loop>
-    <source src="https://dl.dropboxusercontent.com/scl/fi/2k8s8n2wz3i0r2v4d51sh/One-Less-Lonely-Girl-Justin-Bieber.mp3?rlkey=xxx" type="audio/mp3">
+    <source src="https://raw.githubusercontent.com/DigitalDominium/DateNight12_12_2025/main/Justin%20Bieber%20-%20One%20Less%20Lonely%20Girl.mp3" type="audio/mp3">
   </audio>
 
   <script>
-    // Try autoplay (works on desktop)
+    // Try autoplay — works on desktop, mobile requires user interaction.
     const music = document.getElementById("bgMusic");
-    music.volume = 0.5;
+    music.volume = 0.55;
+
     music.play().catch(() => {
-      // Unlock audio after first tap (mobile restriction workaround)
       const unlock = () => {
         music.play();
         document.removeEventListener("click", unlock);
@@ -190,6 +190,10 @@
     >
       💕 Accept Date
     </a>
+
+    <div class="tiny-text">
+      This will open WhatsApp and send: “Hey David I accept your Date.”
+    </div>
   </main>
 </body>
 </html>
